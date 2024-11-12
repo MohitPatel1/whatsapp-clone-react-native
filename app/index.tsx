@@ -2,8 +2,8 @@ import React from 'react';
 import { View, Text, Image, StyleSheet, TouchableOpacity, Linking } from 'react-native';
 import Colors from '@/constants/Colors';
 import { Link } from 'expo-router';
-import welcomeImage from '@/assets/images/welcome.png';
-const welcome_image = Image.resolveAssetSource(welcomeImage).uri;
+// import welcomeImage from '@/assets/images/welcome.png';
+// const welcome_image = Image.resolveAssetSource(welcomeImage).uri;
 
 const WelcomeScreen = () => {
   const openLink = () => {
@@ -12,7 +12,7 @@ const WelcomeScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Image source={{ uri: welcome_image }} style={styles.welcome} />
+      {/* <Image source={{ uri: welcome_image }} style={styles.welcome} /> */}
       <Text style={styles.headline}>Welcome to WhatsApp Clone</Text>
       <Text style={styles.description}>
         Read our{' '}
